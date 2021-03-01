@@ -1,0 +1,10 @@
+value = int(input('Выручка компании: '))
+costs = int(input('Издержки компании: '))
+
+if value > costs:
+    print('Компания работает с прибылью.', ' Рентабельность:', (value - costs) / value)
+    number_of_employees = int(input('Введите количество сотрудников: '))
+    print('Прибыль на одного сотрудника составляет: ', value / number_of_employees)
+
+else:
+    print('Компания работает с убытком')
