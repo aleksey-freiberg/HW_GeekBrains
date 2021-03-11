@@ -1,0 +1,9 @@
+def int_func(word):
+    latin = 'hjlkjhjdsiuhef'
+    return word.title() if not set(word).difference(latin) else False
+
+words = input('Введите строку из слов разделенных пробелами ').split()
+for i in words:
+    result = int_func(i)
+    if result:
+        print(int_func(i), ' ')
