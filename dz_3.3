@@ -1,0 +1,11 @@
+def my_func(num_1, num_2, num_3):
+    if num_1 < num_2:
+        min = num_1
+    else:
+        min = num_2
+    if num_3 < min:
+        min = num_3
+    sum = num_1 + num_2 + num_3 - min
+    return sum
+
+print(my_func(10, 20, 30))
