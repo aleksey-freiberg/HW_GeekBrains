@@ -1,0 +1,10 @@
+def my_func(x, y):
+    x = float(x)
+    y = int(y)
+    if x > 0 and y < 0:
+        result = x ** y
+        return result
+    else:
+        print('Ошибка. x - целое положительное, y - целое отрицательное')
+
+print(my_func(5, -3))
